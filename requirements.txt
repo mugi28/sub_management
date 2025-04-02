@@ -1,0 +1,24 @@
+# ✅ Flask (웹 서버)
+flask==2.2.5
+flask-cors==3.0.10  # CORS 문제 해결 (프론트엔드와 통신)
+
+# ✅ 데이터베이스 (MySQL 연동)
+pymysql==1.1.0  # MySQL 연동
+flask-sqlalchemy==3.0.3  # ORM (SQLAlchemy)
+flask-migrate==4.0.5  # DB 마이그레이션 관리
+
+# ✅ 환경 변수 관리 (.env 파일 사용)
+python-dotenv==1.0.0  
+
+# ✅ RESTful API 개발
+flask-restful==0.3.9  
+
+# ✅ 로그인 / 회원가입 (JWT 기반 인증)
+flask-jwt-extended==4.5.2  
+
+# ✅ 시간 관리 (예약 작업, 일정 관리 등)
+apscheduler==3.10.4  # 특정 시간마다 자동 실행
+
+# ✅ 날짜 및 시간 처리 (시간대 설정)
+python-dateutil==2.9.0.post0  
+pytz==2024.2  
