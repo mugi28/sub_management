@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>로그인</h1>
+    <form method="POST">
+        <div>
+            <label for="user_id">아이디:</label>
+            <input type="text" id="user_id" name="user_id" required>
+        </div>
+        <div>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">로그인</button>
+        <p>아직 회원이 아니신가요? <a href="/register">회원가입</a></p>
+    </form>
+</body>
+</html>
