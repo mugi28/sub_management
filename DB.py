@@ -1,7 +1,7 @@
 import pymysql 
 
 # 데이터베이스 설정
-DB_HOST = "127.0.0.1"
+DB_HOST = "localhost"  # 데이터베이스 호스트 (localhost 또는 IP 주소)
 DB_USER = "root"
 DB_PASSWORD = "ghdwhdgy0328!"  # ❗실제 운영에서는 환경변수로 관리 권장
 DB_NAME = "subs_manage"  # 데이터베이스 이름
