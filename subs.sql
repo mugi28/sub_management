@@ -31,9 +31,9 @@ CREATE TABLE user_subscriptions (
     payment_account VARCHAR(100),                   -- 결제 계좌/카드 마스킹 정보
     subscription_date DATE NOT NULL,                -- 구독 시작일
     next_payment_date DATE NOT NULL,                -- 다음 결제 예정일
-    last_payment_date DATpayment_historyE,                        -- 마지막 결제일
+    last_payment_date DATE,                        -- 마지막 결제일, syntax 에러? DATE로 수정
     last_payment_amount DECIMAL(10, 2),            -- 마지막 결제 금액
-    status ENUM('active', 'paused', 'cancelled') DEFAULT 'active', -- 구독 상태
+    subscription_status ENUM('active', 'paused', 'cancelled') DEFAULT 'active', -- 구독 상태 , syntax 에러? subscription_status로 수정
     auto_renewal BOOLEAN DEFAULT TRUE,              -- 자동 갱신 여부
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,  -- 구독 생성일시
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- 정보 수정일시
